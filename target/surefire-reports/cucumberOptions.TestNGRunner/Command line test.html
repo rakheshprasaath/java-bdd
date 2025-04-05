@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Command line test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>2/0/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>0/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Thu Apr 03 21:38:04 IST 2025</td>
+<td>Started on:</td><td>Sat Apr 05 22:16:39 IST 2025</td>
 </tr>
-<tr><td>Total time:</td><td>0 seconds (225 ms)</td>
+<tr><td>Total time:</td><td>38 seconds (38267 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -67,8 +67,8 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
-<table width='100%' border='1' class='invocation-passed'>
-<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
 <td><b>Attribute(s)</b></td>
 <td width="30%"><b>Exception</b></td>
@@ -76,15 +76,56 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='cucumberOptions.TestNGRunner.runScenario()'><b>runScenario</b><br>Test class: cucumberOptions.TestNGRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Admin Page default Login", "Application Login"</td>
-<td></td>
-<td>0</td>
-<td>cucumberOptions.TestNGRunner@6a79c292</td></tr>
-<tr>
-<td title='cucumberOptions.TestNGRunner.runScenario()'><b>runScenario</b><br>Test class: cucumberOptions.TestNGRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Admin Page default Login", "Application Login"</td>
-<td></td>
-<td>0</td>
-<td>cucumberOptions.TestNGRunner@6a79c292</td></tr>
+<td title='cucumberOptions.TestNGRunner.runScenario()'><b>runScenario</b><br>Test class: cucumberOptions.TestNGRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Search Experience for product", "search and place order of the products on amazon"</td>
+<td><div><pre>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;span id=&quot;submit.add-to-cart-announce&quot; class=&quot;a-button-text&quot; aria-hidden=&quot;true&quot;&gt;...&lt;/span&gt; is not clickable at point (813, 711). Other element would receive the click: &lt;input id=&quot;add-to-cart-button&quot; name=&quot;submit.add-to-cart&quot; title=&quot;Add to Shopping Cart&quot; data-hover=&quot;Select &lt;b&gt;__dims__&lt;/b&gt; from the left&lt;br&gt; to add to Shopping Cart&quot; data-ref=&quot;&quot; class=&quot;a-button-input&quot; type=&quot;submit&quot; formaction=&quot;/cart/add-to-cart/ref=dp_start-bbf_1_glance&quot; value=&quot;Add to cart&quot; aria-labelledby=&quot;submit.add-to-cart-announce&quot;&gt;
+  (Session info: chrome=134.0.6998.88)
+Build info: version: &apos;4.30.0&apos;, revision: &apos;509c7f17cc*&apos;
+System info: os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.11.0-21-generic&apos;, java.version: &apos;17.0.14&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [01e25fdd6d39fd18624cc6ed6c814919, clickElement {id=f.A63E6BCCFBE39B7E9703239A2E156D33.d.A0C30B543C02AE2F4199C0DD8D1F42F4.e.168}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 134.0.6998.88, chrome: {chromedriverVersion: 134.0.6998.88 (7e3d5c978c6d..., userDataDir: /tmp/.org.chromium.Chromium...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:34741}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: linux, proxy: Proxy(), se:cdp: ws://localhost:34741/devtoo..., se:cdpVersion: 134.0.6998.88, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on linux (01e25fdd6d39fd18624cc6ed6c814919)] -&gt; xpath: (//*[text()=&apos;Add to cart&apos;])[2]]
+Session ID: 01e25fdd6d39fd18624cc6ed6c814919
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
+	at stepDefinitions.GreenKartStepDefinition.user_searched_with_shortname_in_offers_page_to_check_if_product_exist(GreenKartStepDefinition.java:54)
+	at ✽.user searched with shortname in offers page to check if product exist(file:///home/rakhesh/vscode/java-bdd/src/test/java/features/Scenario.feature:7)
+... Removed 5 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1401295795", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1401295795'><pre>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;span id=&quot;submit.add-to-cart-announce&quot; class=&quot;a-button-text&quot; aria-hidden=&quot;true&quot;&gt;...&lt;/span&gt; is not clickable at point (813, 711). Other element would receive the click: &lt;input id=&quot;add-to-cart-button&quot; name=&quot;submit.add-to-cart&quot; title=&quot;Add to Shopping Cart&quot; data-hover=&quot;Select &lt;b&gt;__dims__&lt;/b&gt; from the left&lt;br&gt; to add to Shopping Cart&quot; data-ref=&quot;&quot; class=&quot;a-button-input&quot; type=&quot;submit&quot; formaction=&quot;/cart/add-to-cart/ref=dp_start-bbf_1_glance&quot; value=&quot;Add to cart&quot; aria-labelledby=&quot;submit.add-to-cart-announce&quot;&gt;
+  (Session info: chrome=134.0.6998.88)
+Build info: version: &apos;4.30.0&apos;, revision: &apos;509c7f17cc*&apos;
+System info: os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.11.0-21-generic&apos;, java.version: &apos;17.0.14&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [01e25fdd6d39fd18624cc6ed6c814919, clickElement {id=f.A63E6BCCFBE39B7E9703239A2E156D33.d.A0C30B543C02AE2F4199C0DD8D1F42F4.e.168}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 134.0.6998.88, chrome: {chromedriverVersion: 134.0.6998.88 (7e3d5c978c6d..., userDataDir: /tmp/.org.chromium.Chromium...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:34741}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: linux, proxy: Proxy(), se:cdp: ws://localhost:34741/devtoo..., se:cdpVersion: 134.0.6998.88, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on linux (01e25fdd6d39fd18624cc6ed6c814919)] -&gt; xpath: (//*[text()=&apos;Add to cart&apos;])[2]]
+Session ID: 01e25fdd6d39fd18624cc6ed6c814919
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
+	at stepDefinitions.GreenKartStepDefinition.user_searched_with_shortname_in_offers_page_to_check_if_product_exist(GreenKartStepDefinition.java:54)
+	at ✽.user searched with shortname in offers page to check if product exist(file:///home/rakhesh/vscode/java-bdd/src/test/java/features/Scenario.feature:7)
+</pre></div></td>
+<td>38</td>
+<td>cucumberOptions.TestNGRunner@58134517</td></tr>
 </table><p>
 </body>
 </html>

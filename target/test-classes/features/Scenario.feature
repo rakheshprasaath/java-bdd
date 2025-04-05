@@ -1,12 +1,7 @@
-Feature: Application Login
+Feature:search and place order of the products on amazon
 
-    Scenario Outline: Admin Page default Login
-        Given User is on Netbanking landing Page
-        When User Login into Application with "<user>" and password "<password>"
-        Then Home Page is displayed
-        And Cards are displayed
+Scenario: Search Experience for product
 
-Examples:
-    | user | password |
-    | admin | 123 |
-    | operational| 1234 |
+Given User is on amazon Landing page
+When user searched with name "Mutti Parma Pelati Whole Peeled Tomatoes Italian, 14.11 oz ℮ 400 g" and extracted actual name of the product
+Then user searched with shortname in offers page to check if product exist

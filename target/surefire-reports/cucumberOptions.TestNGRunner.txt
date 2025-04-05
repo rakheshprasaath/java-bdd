@@ -1,4 +1,31 @@
 -------------------------------------------------------------------------------
 Test set: cucumberOptions.TestNGRunner
 -------------------------------------------------------------------------------
-Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.564 sec
+Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 38.567 sec <<< FAILURE!
+runScenario(cucumberOptions.TestNGRunner)  Time elapsed: 38.156 sec  <<< FAILURE!
+org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <span id="submit.add-to-cart-announce" class="a-button-text" aria-hidden="true">...</span> is not clickable at point (813, 711). Other element would receive the click: <input id="add-to-cart-button" name="submit.add-to-cart" title="Add to Shopping Cart" data-hover="Select <b>__dims__</b> from the left<br> to add to Shopping Cart" data-ref="" class="a-button-input" type="submit" formaction="/cart/add-to-cart/ref=dp_start-bbf_1_glance" value="Add to cart" aria-labelledby="submit.add-to-cart-announce">
+  (Session info: chrome=134.0.6998.88)
+Build info: version: '4.30.0', revision: '509c7f17cc*'
+System info: os.name: 'Linux', os.arch: 'amd64', os.version: '6.11.0-21-generic', java.version: '17.0.14'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [01e25fdd6d39fd18624cc6ed6c814919, clickElement {id=f.A63E6BCCFBE39B7E9703239A2E156D33.d.A0C30B543C02AE2F4199C0DD8D1F42F4.e.168}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 134.0.6998.88, chrome: {chromedriverVersion: 134.0.6998.88 (7e3d5c978c6d..., userDataDir: /tmp/.org.chromium.Chromium...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:34741}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: linux, proxy: Proxy(), se:cdp: ws://localhost:34741/devtoo..., se:cdpVersion: 134.0.6998.88, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on linux (01e25fdd6d39fd18624cc6ed6c814919)] -> xpath: (//*[text()='Add to cart'])[2]]
+Session ID: 01e25fdd6d39fd18624cc6ed6c814919
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
+	at stepDefinitions.GreenKartStepDefinition.user_searched_with_shortname_in_offers_page_to_check_if_product_exist(GreenKartStepDefinition.java:54)
+	at ✽.user searched with shortname in offers page to check if product exist(file:///home/rakhesh/vscode/java-bdd/src/test/java/features/Scenario.feature:7)
+
